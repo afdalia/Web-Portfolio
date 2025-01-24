@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Andi Nur Afdalia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-[#0a192f] text-white font-sans">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-6 fixed w-full bg-[#0a192f] z-50">
+        <div class="text-2xl font-bold">Portfolio.</div>
+        <nav>
+            <div class="burger-menu md:hidden">
+                <button class="text-2xl focus:outline-none" id="burger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="nav-links flex space-x-6 text-lg" id="nav-links">
+                <li><a class="hover:text-blue-400" href="#about">About</a></li>
+                <li><a class="hover:text-blue-400" href="#skills">Skills</a></li>
+                <li><a class="hover:text-blue-400" href="#projects">Projects</a></li>
+                <li><a class="hover:text-blue-400" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="flex flex-col md:flex-row items-center justify-center min-h-screen p-6">
+        <div class="text-center md:text-left md:w-1/2 space-y-4">
+            <h1 class="text-4xl md:text-5xl font-bold">Hello I'm</h1>
+            <h2 class="text-5xl md:text-6xl font-bold">Andi Nur Afdalia</h2>
+            <h3 class="text-2xl md:text-3xl text-blue-400">
+                And I'm a <span class="text-blue-500">Frontend Developer</span>
+            </h3>
+               
+            <div class="flex justify-center md:justify-start space-x-4">
+                <a class="text-blue-400 hover:text-blue-500" href="https://www.instagram.com/it_ss61?igsh=NDExMWpscTRia3N6"><i class="fab fa-instagram"></i></a>
+                <a class="text-blue-400 hover:text-blue-500" href="https://youtube.com/@andinurafdalia792?si=SDsqKdK4s0Co1GVc"><i class="fab fa-youtube"></i></a>
+                <a class="text-blue-400 hover:text-blue-500" href="https://www.facebook.com/idha.samad.5?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                
+            </div>
+            
+        </div>
+        <div class="mt-6 md:mt-0 md:w-1/2 flex justify-center">
+            <img alt="Portrait of Mark Junior" class="rounded-full w-64 h-64 object-cover" src="img/4.png"/>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-900 flex items-center justify-center min-h-screen p-6">
+        <div class="bg-gray-800 p-8 rounded-lg flex flex-col md:flex-row items-center             md:items-start space-y-6 md:space-y-0 md:space-x-8 max-w-4xl">
+          <div class="border-2 border-blue-500 rounded-lg overflow-hidden">
+              <img
+                  alt="Andi Nur Afdalia, a frontend developer, wearing a blue shirt and smiling"
+                  class="w-72 h-96 object-cover"
+                  src="img/saya.jpg"
+              />
+          </div>
+          <div class="text-white max-w-md">
+              <h1 class="text-4xl font-bold mb-2">
+                  About <span class="text-blue-500">Me</span>
+              </h1>
+              <h2 class="text-2xl font-semibold mb-4">Frontend Developer</h2>
+              <p class="text-gray-400 mb-6">
+                  Hi, I'm Andi Nur Afdalia, I am an Informatics Engineering student who is enthusiastic in developing innovative technology solutions. With expertise in programming, application development and systems analysis, I am always committed to continuously learning and honing my technical skills through various practical projects and academic experiences.
+              </p>
+              
+          </div>
+      </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="skills" class="bg-[#0a192f] py-12">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">My <span class="text-blue-400">Services</span></h2>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+            <!-- Service Card 1 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center w-72 h-96 flex flex-col justify-between service-card">
+                <div>
+                    <div class="text-4xl text-blue-400 mb-4">
+                        <i class="fas fa-code" aria-label="Web Development Icon"></i>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2">Web Development</h2>
+                    <p class="text-gray-400 mb-4">
+                        I build responsive and user-friendly websites using modern technologies like HTML, CSS, JavaScript, and frameworks like React and Vue.js.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center w-72 h-96 flex flex-col justify-between service-card">
+                <div>
+                    <div class="text-4xl text-blue-400 mb-4">
+                        <i class="fas fa-palette" aria-label="UI/UX Design Icon"></i>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2">UI/UX Design</h2>
+                    <p class="text-gray-400 mb-4">
+                        I design intuitive and visually appealing user interfaces to enhance user experience and engagement.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center w-72 h-96 flex flex-col justify-between service-card">
+                <div>
+                    <div class="text-4xl text-blue-400 mb-4">
+                        <i class="fas fa-file" aria-label="App Development Icon"></i>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2">Data Analyst</h2>
+                    <p class="text-gray-400 mb-4">
+                        Analyzing data to find insights and patterns that can help make decisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-900 py-12">
+      <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">Latest <span class="text-blue-400">Projects</span></h2>
+          <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+            <!-- Project Card 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg w-64">
+                <img alt="E-commerce Website Design" class="w-full h-40 object-cover" src="img/2.png"/>
+                <div class="p-4 bg-gradient-to-b from-blue-500 to-blue-700 text-center">
+                    <h3 class="text-xl font-bold">E-commerce Website</h3>
+                    <p class="text-sm">
+                        Designed and developed a fully responsive e-commerce website with a modern UI/UX.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg w-64">
+                <img alt="Portfolio Website Design" class="w-full h-40 object-cover" src="img/3.png"/>
+                <div class="p-4 bg-gradient-to-b from-blue-500 to-blue-700 text-center">
+                    <h3 class="text-xl font-bold">Portfolio Website</h3>
+                    <p class="text-sm">
+                        Created a personal portfolio website to showcase skills, projects, and achievements.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg w-64">
+                <img alt="Blog Platform Design" class="w-full h-40 object-cover" src="img/1.png"/>
+                <div class="p-4 bg-gradient-to-b from-blue-500 to-blue-700 text-center">
+                    <h3 class="text-xl font-bold">Forecasting</h3>
+                    <p class="text-sm">
+                        Developed a blog platform with user authentication and content management features.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<div id="contact" class="bg-gray-900 flex items-center justify-center min-h-screen">
+    <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-sm">
+        <div class="bg-gradient-to-r from-blue-700 to-blue-500 rounded-t-lg p-4 text-center">
+            <h1 class="text-white text-2xl font-bold">CONTACT US</h1>
+        </div>
+        <div class="p-4 space-y-4">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-phone-alt text-blue-700"></i>
+                <span class="text-gray-700">+6282132871280</span>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-envelope text-blue-700"></i>
+                <span class="text-gray-700">aandinurafdalia@gmail.com</span>
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-map-marker-alt text-blue-700"></i>
+                <span class="text-gray-700">Perdos Racing Center blok g3</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-[#0a192f] py-6 text-center">
+    <p class="text-gray-400">
+        &copy; 2025 Andi Nur Afdalia. All rights reserved.
+    </p>
+    <div class="mt-4 flex justify-center space-x-4">
+        <a class="text-blue-400 hover:text-blue-500" href="https://www.instagram.com/it_ss61?igsh=NDExMWpscTRia3N6"><i class="fab fa-instagram"></i></a>
+        <a class="text-blue-400 hover:text-blue-500" href="https://youtube.com/@andinurafdalia792?si=SDsqKdK4s0Co1GVc"><i class="fab fa-youtube"></i></a>
+        <a class="text-blue-400 hover:text-blue-500" href="https://www.facebook.com/idha.samad.5?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+        
+    </div>
+</footer>
+
+<!-- JavaScript for Burger Menu -->
+<script>
+    document.getElementById('burger').addEventListener('click', function() {
+        document.getElementById('nav-links').classList.toggle('active');
+    });
+</script>
+</body>
+</html>
